@@ -78,6 +78,10 @@ class App extends Component {
             picture="/images/domi.jpg"
           />
 
+          <Section
+            picture="/images/felix.jpg"
+          />
+
 
 
 
