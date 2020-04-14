@@ -32,13 +32,16 @@ class Login extends React.Component {
         <SliderItem 
         picture="/images/hero_1.jpg" 
         />
-        <main ref="main">
+        <Slant />
+        <div className="site-section bg-white">
+        <div className="container">
+            <div className="col-md-12">
           <section className="section section-shaped section-lg">
-            <Slant />
+            
             <Container className="pt-lg-7">
               <Row className="justify-content-center">
-                <Col lg="5">
-                  <Card className="bg-secondary shadow border-0">
+                <Col lg="7">
+                  <Card className="bg-white shadow border-0">
                     <CardHeader className="bg-white pb-5">
                       <div className="text-muted text-center mb-3">
                         <small>Sign in with</small>
@@ -152,7 +155,9 @@ class Login extends React.Component {
               </Row>
             </Container>
           </section>
-        </main>
+          </div>
+        </div>
+        </div>
         <Footer />
       </>
     );
