@@ -22,7 +22,7 @@ class Testimonials extends Component{
                         <img src="images/person_1.jpg" alt="Image" className="img-fluid rounded-circle w-25 mx-auto"/>
                         </div>
                         <div>
-                        <h2 className="h5 mb-4">Katie Johnson</h2>
+                        <h2 className="h5 mb-4">Sebastian Berghofer</h2>
                         <blockquote>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias accusantium qui optio, possimus necessitatibus voluptate aliquam velit nostrum tempora ipsam!&rdquo;</blockquote>
                         </div>
                     </div>
@@ -32,7 +32,7 @@ class Testimonials extends Component{
                         <img src="images/person_2.jpg" alt="Image" className="img-fluid rounded-circle w-25 mx-auto"/>
                         </div>
                         <div>
-                        <h2 className="h5 mb-4">Jun Mars</h2>
+                        <h2 className="h5 mb-4">Janina Gordon</h2>
                         <blockquote>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias accusantium qui optio, possimus necessitatibus voluptate aliquam velit nostrum tempora ipsam!&rdquo;</blockquote>
                         </div>
                     </div>
@@ -42,7 +42,7 @@ class Testimonials extends Component{
                         <img src="images/person_3.jpg" alt="Image" className="img-fluid rounded-circle w-25 mx-auto"/>
                         </div>
                         <div>
-                        <h2 className="h5 mb-4">Shane Holmes</h2>
+                        <h2 className="h5 mb-4">Vincent Wollinger</h2>
                         <blockquote>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias accusantium qui optio, possimus necessitatibus voluptate aliquam velit nostrum tempora ipsam!&rdquo;</blockquote>
                         </div>
                     </div>
@@ -52,7 +52,7 @@ class Testimonials extends Component{
                         <img src="images/person_4.jpg" alt="Image" className="img-fluid rounded-circle w-25 mx-auto"/>
                         </div>
                         <div>
-                        <h2 className="h5 mb-4">Mark Johnson</h2>
+                        <h2 className="h5 mb-4">Dominik Hartogs</h2>
                         <blockquote>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias accusantium qui optio, possimus necessitatibus voluptate aliquam velit nostrum tempora ipsam!&rdquo;</blockquote>
                         </div>
                     </div>
