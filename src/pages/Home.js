@@ -66,6 +66,9 @@ class Home extends Component {
           <Section
             picture="/images/janina.jpg"
           />
+          <Section
+          p1="böalbalbalbalbalbalalbalbalbalbalbalbalba "
+          p2="lksklnksjfnkjnfc" />
 
           <Section
             sitehalf="block"
@@ -86,8 +89,8 @@ class Home extends Component {
 
 
 
-
-          <Products />
+<Products />
+          
 
 
 

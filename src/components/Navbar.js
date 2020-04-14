@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from "react-router-dom";
 
 class Navbar extends Component {
     render() {
@@ -31,7 +32,7 @@ class Navbar extends Component {
                                             <ul className="site-menu js-clone-nav d-none d-lg-block">
                                                 <li className="active"><a href="index.html">Home</a></li>
                                                 <li className="has-children">
-                                                    <a href="about.html">About</a>
+                                                    <a>About</a>
                                                     <ul className="dropdown arrow-top">
                                                         <li><a href="testimonials.html">Testimonials</a></li>
                                                         <li><a href="gallery.html">Gallery</a></li>
@@ -47,10 +48,10 @@ class Navbar extends Component {
                                                         </li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="services.html">Services</a></li>
+                                                <li><Link to="/profile-page" tag={Link}>Profile</Link></li>
                                                 <li><a href="blog.html">Blog</a></li>
                                                 <li><a href="contact.html">Contact</a></li>
-                                                <li><a href="contact.html"><span className="d-inline-block bg-primary text-white btn btn-primary">Get Started</span></a></li>
+                                                <li><Link to="/login-page" ><span className="d-inline-block bg-primary text-white btn btn-primary">Login</span></Link></li>
                                             </ul>
                                         </div>
                                     </nav>
