@@ -38,7 +38,7 @@ class Login extends React.Component {
             <div className="col-md-12">
           <section className="section section-shaped section-lg">
             
-            <Container className="pt-lg-7">
+            <Container className="pt-lg-7 first-section">
               <Row className="justify-content-center">
                 <Col lg="7">
                   <Card className="bg-white shadow border-0">
