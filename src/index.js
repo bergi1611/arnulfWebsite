@@ -8,7 +8,8 @@ import Index from "./pages/Index.js";
 import Landing from "./pages/Landing.js";
 import Login from "./pages/Login.js";
 import Profile from "./pages/Profile.js";
-import Register from "./pages/Register.js";
+import Register from "./pages/Register.js"
+import About from "./pages/About.js"
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
@@ -26,6 +27,11 @@ ReactDOM.render(
           path="/home-page"
           exact
           render={props => <Home {...props} />}
+        />
+        <Route
+          path="/about-page"
+          exact
+          render={props => <About {...props} />}
         />
         <Route path="/login-page" exact render={props => <Login {...props} />} />
         <Route

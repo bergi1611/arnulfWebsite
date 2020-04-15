@@ -32,7 +32,7 @@ class Navbar extends Component {
                                             <ul className="site-menu js-clone-nav d-none d-lg-block">
                                                 <li className="active"><a href="index.html">Home</a></li>
                                                 <li className="has-children">
-                                                    <a>About</a>
+                                                    <Link to="/about-page">About</Link>
                                                     <ul className="dropdown arrow-top">
                                                         <li><a href="testimonials.html">Testimonials</a></li>
                                                         <li><a href="gallery.html">Gallery</a></li>
