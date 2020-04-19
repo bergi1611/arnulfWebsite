@@ -1,24 +1,49 @@
 const functions = require('firebase-functions');
-const admin = require('firebase-admin');
+
+const { 
+    getAllPosts, 
+    postOnePost, 
+    getPost,
+    commentOnPost
+ } = require('./handlers/posts');
+const { 
+    signup, 
+    login, 
+    uploadImage, 
+    addUserDetails,
+    getAuthenticatedUser 
+} = require('./handlers/users');
 
 
-admin.initializeApp();
+const express = require('express');
+const app = express();
 
-exports.helloWorld = functions.https.onRequest((request, response) => {
- response.send("Hello guuuuysss firebase yeah");
-});
+const FBAuth = require('./util/fbAuth');
 
-exports.getPosts = functions.https.onRequest((req, res) => {
-    admin
-    .firestore()
-    .collection('posts')
-    .get()
-    .then(data => {
-        let posts = [];
-        data.forEach(doc => {
-            postMessage.push(doc.data());
-        });
-        return res.json(posts);
-    })
-    .catch(err => console.error(err));
-});
+
+// Post routes
+app.get('/posts', getAllPosts);
+app.post('/post', FBAuth, postOnePost);
+app.get('/post/:postId', getPost);
+//TODO: delete post
+//TODO: like post
+//TODO: unlike post
+app.post('/post/:postId/comment', FBAuth, commentOnPost);
+
+// users routes
+app.post('/signup', signup);
+app.post('/login', login);
+app.post('/user/image', FBAuth, uploadImage);
+app.post('/user', FBAuth, addUserDetails);
+app.get('/user', FBAuth, getAuthenticatedUser);
+
+
+
+
+
+
+
+
+
+
+exports.api = functions.region('europe-west3').https.onRequest(app);
